@@ -8,21 +8,19 @@
 <body>
     <script>
         let contador = 1;
-        let resultado;
         let confirm;
 
         while ( contador <= 100){
+            
+            let confirm = prompt('deseja continuar')
             console.log(contador)
 
-            let confirm = prompt('deseja continuar')
-
             if ( confirm == 's' || confirm == 'sim'){
-                console.log(contador)
-            }
-             else{
+                contador++;
+            } else{
                 contador = 100
             }
-            contador++;
+            
         }        
         
         
