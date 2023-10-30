@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop for</title>
+</head>
+<body>
+    <script>
+        // for (let index = 0; index <= 10; index++) {
+        //     console.log(index);
+            
+        // }
+
+        // // essse idex é outra variavel
+        // for (let index = 10; index > 0 ; index--) {
+        //     console.log(index);
+            
+        // } 
+        
+
+        // for (let index = 0; index < 5; index++) {
+
+        //     console.log("primeiro for: " , index)
+
+        //     for (let j = 0; j < 5; j++) {
+        //         console.log("segundo for:" , j)
+                
+        //     }
+            
+        // }
+//                        0                  1                2
+        // let alunos = ["savalo horse", "mirata filoxina", "del lokon piron"];  
+        // [] é um vetor
+
+
+        
+        // meu jeito 
+        let alunos=[]
+        alunos.push(prompt("digite o aluno nº" + (alunos.length+ 1)))
+        // push para add novo nome em alunos
+        console.log("lista de alunos =========");
+
+        for (let index = 0; index < alunos.length; index++) {
+            const posicao = index + 1
+            // length serve para pegar quantos valores tem na variavel
+            
+            let confirmacao = prompt("deseja adicionar ou consultar os nomes")
+            
+            if(confirmacao == "adicionar"){
+                alunos.push(prompt("digite o aluno nº" + (alunos.length+ 1)))
+                console.log(posicao + "º aluno é: " + alunos[index]);
+                
+            } else {
+                console.log(posicao + "º aluno é: " + alunos[index]);
+            }
+            
+            
+         }
+
+
+        //  correção
+    //     let alunos = []
+    //     let opcao = "sim"
+
+    //     while(opcao == "sim"){
+    //         opcao = prompt('deseja continuar ? sim/não')
+    //         if(opcao == 'sim')
+    //         alunos.push(prompt('digite o aluno nº' + (alunos.length + 1)));
+
+    //     }
+
+    //     console.log("     lista      ")
+    //    for (let index = 0; index < alunos.length; index++) {
+    //         const element = alunos[index];
+            
+    //     }
+        </script>
+</body>
+</html>
