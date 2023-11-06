@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let personagens = ['batman' , 'homen de ferro', 'goku' , 'gojo' , 'pica pau']
+
+
+        for (let index = 0; index < personagens.length; index++) {
+            if(index == 2)
+                console.log(personagens[index])
+            
+            
+        }
+
+        personagens.push('ben 10')
+        console.log(personagens)
+        personagens.splice(2,1)
+        // slipe remove algum item do vetor, para remover deve usar o numero do item e quantos quer remover
+        // no caso o 2 é o numero do item que tirou e o 1 é a quantidade
+        console.log(personagens)
+</script>
+</body>
+</html>
